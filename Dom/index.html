@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dom</title>
+    </head>
+    <body>
+        <h1 id="title">Dom</h1>
+        <h2 id="subtitle">Understanding the Document Object Model</h2>
+        <p id="description">The Document Object Model (DOM) is a programming
+            interface for HTML and XML documents. It represents the structure of
+            a document and allows programs to manipulate its content and
+            presentation.</p>
+
+        <button onclick="changeContent()">Change Content</button>
+        <script>
+            function changeContent() {
+                document.getElementById("title").innerHTML = "DOM Manipulation";
+                document.getElementById("subtitle").innerHTML = "Learn how to manipulate the DOM";
+                document.getElementById("description").innerHTML = "The DOM allows you to dynamically change the content, structure, and style of a web page using JavaScript.";
+            }
+        </script>
+    </body>
+</html>
